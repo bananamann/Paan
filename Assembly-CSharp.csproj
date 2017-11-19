@@ -45,8 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\cameraScript.cs" />
+     <Compile Include="Assets\dropPlatScript.cs" />
+     <Compile Include="Assets\gunScript.cs" />
+     <Compile Include="Assets\movingPlatScript.cs" />
      <Compile Include="Assets\paanScript.cs" />
+     <Compile Include="Assets\projScript.cs" />
+     <Compile Include="Assets\spikeScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Software/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
