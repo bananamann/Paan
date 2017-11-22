@@ -24,7 +24,7 @@ public class paanScript : MonoBehaviour {
     int cloneCount = 1;
 
     float jumpFromHeight;
-    float speedMult = 1.0f;
+    float speedMult = 2.4f;
     float gravityFlip = -1.0f;
 
     bool reachedMaxJump = false;
@@ -75,8 +75,8 @@ public class paanScript : MonoBehaviour {
 
         if (Input.GetKeyUp("left shift"))
         {
-            anim.SetBool("running", false);
-            speedMult = 1.0f;
+            anim.SetBool("running", true);
+            speedMult = 2.4f;
         }
     }
 
@@ -275,14 +275,14 @@ public class paanScript : MonoBehaviour {
         direction = "right";
         if (Input.GetKey("left shift"))
         {
-            anim.SetBool("running", true);
-            anim.SetBool("walking", false);
-            speedMult = 2.4f;
+            anim.SetBool("running", false);
+            anim.SetBool("walking", true);
+            speedMult = 0.75f;
         }
         else
         {
-            anim.SetBool("walking", true);
-            anim.SetBool("running", false);
+            anim.SetBool("walking", false);
+            anim.SetBool("running", true);
         }
         sr.flipX = false;
         transform.Translate(0.08f * speedMult, 0, 0);
@@ -293,14 +293,14 @@ public class paanScript : MonoBehaviour {
         direction = "left";
         if (Input.GetKey("left shift"))
         {
-            anim.SetBool("running", true);
-            anim.SetBool("walking", false);
-            speedMult = 2.4f;
+            anim.SetBool("running", false);
+            anim.SetBool("walking", true);
+            speedMult = 0.75f;
         }
         else
         {
-            anim.SetBool("walking", true);
-            anim.SetBool("running", false);
+            anim.SetBool("walking", false);
+            anim.SetBool("running", true);
         }
         sr.flipX = true;
         transform.Translate(-0.08f * speedMult, 0, 0);
